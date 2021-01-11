@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "0806f7cd-4954-4c04-b9a8-9c042b73220d",
+		"name": "email-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post: cron job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cron-job-endpoint",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cron-job-endpoint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post: create-emailer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "site",
+							"value": "Prn",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "#000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/create-emailer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-emailer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post: cron job with local file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cron-job-endpoint-with-local-file",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cron-job-endpoint-with-local-file"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
