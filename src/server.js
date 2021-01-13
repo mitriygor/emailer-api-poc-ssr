@@ -49,7 +49,8 @@ app.post('/cron-job-endpoint', (req, res) => {
 
                     ejs.renderFile('./email-templates/template.ejs', {
                         color: data.id,
-                        site: data.title
+                        site: data.title,
+                        sites: ['Pic One', 'Pic Two', 'Pic Three', 'Pic Four']
                     }, {}, (err, str) => {
                         console.log('err', err);
                         console.log('str', str);

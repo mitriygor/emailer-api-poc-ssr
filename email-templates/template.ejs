@@ -4,8 +4,15 @@
         <title><%= site %></title>
     </head>
     <body>
-        <% for(var i=0; i < 3; i++) { %>
-            <h2><%= site %></h2>
-         <% } %>
+        <table>
+            <% for(var i=0; i < 4; i+=2) { %>
+                <tr>
+                <% for(var j=0; j < 2; j++) { %>
+                    <td><%= sites[i + j] %></td>
+                 <% } %>
+                </tr>
+             <% } %>
+        </table>
+
     </body>
 </html>
